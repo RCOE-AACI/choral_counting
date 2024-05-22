@@ -19,13 +19,13 @@ num_rows = st.sidebar.slider(
 start_num = st.sidebar.number_input(
     label="Starting number",
     value=1,
-    min_value=1,
-    max_value=100,
+    min_value=-1000,
+    max_value=1000,
     step=1,
     key="start_num",
 )
 increment = st.sidebar.number_input(
-    label="Count by:", value=1, min_value=-100, max_value=100, step=1, key="increment"
+    label="Count by:", value=1, min_value=-1000, max_value=1000, step=1, key="increment"
 )
 direction = st.sidebar.select_slider(
     label="Direction", options=["Left to right", "Top to bottom"], key="direction"
