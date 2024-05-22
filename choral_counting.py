@@ -2,9 +2,8 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(layout="wide")
-
 st.title("RCOE Choral Counting App")
+st.sidebar.image("logo.jpg", width=150)
 st.sidebar.title("Settings")
 num_cols = st.sidebar.slider(
     label="Number of columns",
